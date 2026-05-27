@@ -9,7 +9,7 @@ interface ApiService {
         @Query("sort") created: String = "created",
         @Query("direction") direction: String = "desc",
         @Query("affiliation") affiliation: String = "owner",
-        @Query("per_oage") perPage: Int = 100,
+        @Query("per_page") perPage: Int = 100,
         @Query("t") t: String = "${System.currentTimeMillis()}",
 
     ) : List<Repository>
